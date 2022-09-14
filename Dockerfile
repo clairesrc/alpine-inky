@@ -1,7 +1,6 @@
 FROM python:alpine
 
 RUN apk add --update libcrypto1.1 libcrypto3 libsrt
-RUN chmod 4755 /usr/bin/su
 
 RUN set -xe \
     && echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
